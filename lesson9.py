@@ -26,6 +26,7 @@ sl3_cur =sl3_connection.cursor()
 print('\nsl3 connection', sl3_connection)
 print('cur', sl3_cur)
 
-sl3_cur.execute('CREATE TABLE crypto_rates (print_date DATETIME, rate FLOAT)')
+#sl3_cur.execute('CREATE TABLE crypto_rates (print_date DATETIME, rate FLOAT)')
+sl3_cur.execute("INSERT INTO crypto_rates (print_date, rate) VALUES ")
 
 sl3_connection.close()
